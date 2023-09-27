@@ -8,13 +8,18 @@
 }
 
 body {
+  font-family: "VT323", monospace;
+  font-size: 20px;
   background-color: black;
   color: white;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-image: url("./fondo-animados-estrellas.gif");
+}
 
+.title {
+  font-size: 30px;
 }
 
 #logo-inicio {
@@ -30,7 +35,6 @@ body {
   align-items: stretch;
   gap: 10px;
   text-align: center;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 20px;
 }
 
@@ -39,7 +43,7 @@ body {
   color: white;
   text-decoration: none;
   border-radius: 40px;
-  padding: 7px 30px;
+  padding: 7px 90px;
 }
 
 .botones > a:hover {
@@ -48,47 +52,6 @@ body {
 
 }
 
-
-.contenedor {
-  width: 100px;
-  max-width: 1200px;
-  margin: auto;
-  padding: 45px, 0px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
-}
-
-.contenedor .caja1 {
-  width: 100px;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 20%;
-}
-
-.pie .contenedor .caja h2 {
-  color: white;
-  margin-bottom: 25px;
-  font-size: 20px;
-}
-
-.pie .contenedor .caja p {
-  color: antiquewhite;
-  margin-bottom: 10px;
-
-}
-
-/* .pie .contenedor .caja div a {
-  text-decoration: none;
-  height: 45px;
-  width: 45px;
-  line-height: 45px;
-  color: white;
-  margin-right: 10px;
-  text-align: center;
-} */
 
 footer {
   display: flex;
