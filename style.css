@@ -1,3 +1,12 @@
+:root {
+  --bg-color: linear-gradient(
+    329deg,
+    rgb(122 8 199 / 40%) 0%,
+    rgba(180, 102, 235, 0.5) 50%,
+    rgb(119 119 119 / 0%) 100%
+  );
+}
+
 body {
   background-color: black;
   color: white;
@@ -26,7 +35,7 @@ body {
 }
 
 .botones > a {
-  background: linear-gradient(329deg, rgba(122, 8, 199, 1) 0%, rgba(180, 102, 235, 1) 50%, rgba(206, 160, 212, 1) 100%);
+  background: var(--bg-color);
   color: white;
   text-decoration: none;
   border-radius: 40px;
@@ -39,10 +48,6 @@ body {
 
 }
 
-.pie {
-  width: 100%;
-  background: linear-gradient(329deg, rgba(122, 8, 199, 1) 0%, rgba(180, 102, 235, 1) 50%, rgba(206, 160, 212, 1) 100%);
-}
 
 .contenedor {
   width: 100px;
@@ -69,18 +74,13 @@ body {
   font-size: 20px;
 }
 
-#logo-footer {
-  width: 150px;
-  margin-top: 20px;
-}
-
 .pie .contenedor .caja p {
   color: antiquewhite;
   margin-bottom: 10px;
 
 }
 
-.pie .contenedor .caja div a {
+/* .pie .contenedor .caja div a {
   text-decoration: none;
   height: 45px;
   width: 45px;
@@ -88,10 +88,33 @@ body {
   color: white;
   margin-right: 10px;
   text-align: center;
+} */
+
+footer {
+  display: flex;
+  background: var(--bg-color);
+  width: 100%;
+  gap: 10px;
+  text-align: center;
+  padding: 10px;
 }
 
-.pie .contenedor .caja div a:hover {
-  color: blueviolet;
+footer #logo-footer {
+  width: 100px;
+}
+
+footer > .info {
+  flex: 1;
+}
+
+footer .redes > a {
+  text-decoration: none;
+  width: 30px;
+  color: white;
+}
+
+footer .redes > a:hover {
+  color: black;
 }
 
 .iconos1 a {
